@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Simple Facebook Notification",
+  "description": "Gives you a Facebook notification even with Facebook pinned.",
+  "version": "1.4",
+  "author": "Brian Dawson",
+  
+  "permissions": [
+    "*://*.facebook.com/*"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["js/jquery.js", "js/facebook.js"]
+    }
+  ],
+  
+  "web_accessible_resources": [
+    "icon.ico"
+  ],
+  
+  "icons": { 
+    "16":"icon.png", 
+    "48":"icon.png", 
+    "128":"icon.png" 
+  }
+}
